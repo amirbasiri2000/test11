@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.costum-container {
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.costum-container .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+
+.costum-container .left-content .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #bbb9b9bf;
+  padding: .1rem 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: .4rem 1rem;
+}
+
+.costum-container .left-content .user p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.costum-container .left-content .user i {
+  font-size: 1.7rem;
+  margin: 0 .5rem;
+}
+
+.costum-container .left-content .user .user-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 1rem;
+}
+
+.costum-container .left-content .user .user-level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-left: 1px solid #808080b5;
+}
+
+.costum-container .left-content .user .user-level .level-icon {
+  width: 1.7rem;
+  margin: 0 .3rem;
+}
+
+.costum-container .left-content .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+}
+
+.costum-container .left-content .location p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-left: .5rem;
+}
+
+.costum-container .left-content .location i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.costum-container .center-content {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  border: 10px solid #ffffff2b;
+  max-width: 450px;
+}
+
+.costum-container .center-content .center-title {
+  direction: rtl;
+  margin: 1rem 0;
+}
+
+.costum-container .center-content .center-title span {
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.costum-container .center-content .center-progress .progress {
+  height: .51rem;
+}
+
+.costum-container .center-content .center-progress .progress .progress-bar {
+  background-color: #0d99fd;
+}
+
+.costum-container .center-content .center-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.costum-container .center-content .center-image .center-image-content {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  background-color: #0cab0c;
+  border-radius: 1rem;
+}
+
+.costum-container .center-content .center-image .center-image-content img {
+  width: 95%;
+  height: 80%;
+  border-radius: 1rem;
+  margin: 5px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.costum-container .center-content .center-options p {
+  width: 80%;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.costum-container .center-content .center-options .option1 {
+  background-color: #5fb2e3;
+}
+
+.costum-container .center-content .center-options .option2 {
+  background-color: #e35fc0;
+}
+
+.costum-container .center-content .center-options .option3 {
+  background-color: #91096d;
+}
+
+.costum-container .center-content .center-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.costum-container .center-content .center-footer .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.costum-container .center-content .center-footer .footer-right i {
+  font-size: 1.5rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0.2rem;
+}
+
+.costum-container .center-content .center-footer .footer-middle {
+  padding-left: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.costum-container .center-content .center-footer .footer-middle button {
+  border: none;
+  outline: none;
+  background-color: #17c517;
+  color: #fff;
+  border-radius: .8rem;
+  padding: .5rem 1rem;
+}
+
+.costum-container .center-content .center-footer .footer-left {
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.costum-container .center-content .center-footer .footer-left i {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 0.5rem 0.73rem;
+}
+
+.costum-container .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.costum-container .right-content ul {
+  background-color: #fff;
+  margin-top: 8vh;
+  border-radius: 1rem 0 0 1rem;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.costum-container .right-content ul li {
+  margin: 1rem .5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.costum-container .right-content ul li a .right-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.costum-container .right-content ul li a .right-item i {
+  font-size: 2rem;
+  color: #5fb2e3;
+}
+
+.costum-container .right-content ul li a .right-item i.active {
+  color: #0d48b5;
+}
+
+.costum-container .right-content ul li a .right-item p {
+  color: #222;
+}
+
+@media only screen and (max-width: 960px) {
+  .costum-container .center-content {
+    max-width: 400px;
+    padding: 1rem;
+  }
+  .costum-container .center-content .center-title span {
+    font-size: 1rem;
+  }
+  .costum-container .center-content .center-image {
+    margin: 1.5rem 0;
+  }
+  .costum-container .left-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .costum-container .left-content .user {
+    margin-top: 0;
+  }
+  .costum-container .left-content .user p {
+    font-size: 1rem;
+  }
+  .costum-container .center-content {
+    margin-top: 1rem;
+  }
+  .costum-container .center-content .center-image .center-image-content {
+    width: 9rem;
+    height: 9rem;
+  }
+  .costum-container .center-content .center-footer {
+    margin-bottom: 0;
+  }
+  .costum-container .right-content ul {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .costum-container .right-content ul li a .right-item i {
+    font-size: 1.6rem;
+  }
+  .costum-container .center-content .center-footer .footer-right i {
+    font-size: 1rem;
+  }
+  .costum-container .left-content .location p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .costum-container .center-content {
+    max-width: 66vw;
+  }
+  .costum-container .center-content .center-image .center-image-content {
+    width: 7rem;
+    height: 7rem;
+  }
+  .costum-container .center-content .center-options p {
+    width: 90%;
+    margin-top: 0.5rem;
+    font-size: .9rem;
+  }
+  .costum-container .right-content ul li a .right-item i {
+    font-size: 1rem;
+  }
+  .costum-container .right-content ul li a .right-item p {
+    font-size: .9rem;
+  }
+  .costum-container .left-content .user i {
+    font-size: 1.1rem;
+  }
+  .costum-container .left-content .user .user-name,
+  .costum-container .left-content .user .user-level {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .costum-container .left-content .location i {
+    font-size: 1.7rem;
+  }
+  .costum-container .left-content .location p {
+    font-size: .9rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

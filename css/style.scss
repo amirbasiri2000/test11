@@ -1,0 +1,321 @@
+@import './variable';
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+i{
+    cursor: pointer;
+}
+
+.costum-container{
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+
+    .left-content{
+        @include flex( flex, space-between, flex-start);
+        flex-direction: column;
+        height: 100%;
+        padding: 1rem;
+
+        .user{
+            @include flex( flex, flex-start, center);
+            background-color: #bbb9b9bf;
+            padding: .1rem 1rem;
+            border-radius: 1rem;
+            margin-top: 2rem;
+            padding: .4rem 1rem;
+
+
+            p{
+                color: #fff;
+                font-size: 1.1rem;
+            }
+            i{
+                font-size: 1.7rem;
+                margin: 0 .5rem;
+            }
+            .user-name{
+                @include flex( flex, flex-start, flex-start);
+                margin-right: 1rem;
+               
+            }
+            .user-level{
+                @include flex( flex, flex-start, flex-start);
+                border-left: 1px solid #808080b5;
+
+                .level-icon{
+                    width: 1.7rem;
+                    margin: 0 .3rem;
+                }
+            }
+        }
+        .location{
+            @include flex( flex, flex-start, baseline);
+            cursor: pointer;
+            p{
+                color: #fff;
+                font-size: 1.1rem;
+                margin-left: .5rem;
+            }
+            i{
+                font-size: 2rem;
+                color: #fff;
+            }
+        }
+    }
+
+    .center-content{
+        background: rgba(255, 255, 255, 0.35);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+        padding: 1rem 2rem;
+        margin-top: 3rem;
+        border: 10px solid #ffffff2b;
+        max-width: 450px;
+        
+        .center-title{
+            direction: rtl;
+            margin: 1rem 0;
+
+            span{
+                color: #222;
+                font-size: 1.1rem;
+            }
+        }
+        .center-progress{
+
+            .progress{
+                height: .51rem;
+
+                .progress-bar {
+                    background-color: #0d99fd;
+                }
+            }
+        }
+        .center-image{
+            @include flex( flex, space-between, center);
+            margin: 2rem 0;
+            
+            .center-image-content{
+                width: 10rem;
+                height: 10rem;
+                cursor: pointer;
+                background-color: #0cab0c;
+                border-radius: 1rem;
+                img{
+                    width: 95%;
+                    height: 80%;
+                    border-radius: 1rem;
+                    margin: 5px auto 0;
+                    display: flex;
+                }
+            }
+        }
+        .center-options{
+            p{
+                width: 80%;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                border-radius: 1rem;
+                cursor: pointer;
+                margin-top: 1rem;
+            }
+            .option1{
+                background-color: #5fb2e3;
+            }
+            .option2{
+                background-color: #e35fc0;
+            }
+            .option3{
+                background-color: #91096d;
+            }
+        }
+
+        .center-footer{
+            @include flex( flex, space-between, center);
+            margin: 1rem 0 ;
+
+            .footer-right{
+                @include flex( flex, flex-end, center);
+                flex: 1;
+
+                i{
+                    font-size: 1.5rem;
+                    border: 1px solid gray;
+                    border-radius: 50%;
+                    padding: 0.5rem 0.75rem;
+                    margin: 0 0.2rem;
+                }
+            }
+            .footer-middle{
+                padding-left: 1rem;
+                flex: 1;
+
+                button{
+                    border: none;
+                    outline: none;
+                    background-color: #17c517;
+                    color: #fff;
+                    border-radius: .8rem;
+                    padding: .5rem 1rem;
+                }
+            }
+            .footer-left{
+                cursor: pointer;
+                flex: 1;
+
+                i{
+                    border: 1px solid gray;
+                    border-radius: 50%;
+                    padding: 0.5rem 0.73rem;
+                }
+            }
+        }
+    }
+    
+    .right-content{
+        @include flex( flex, flex-end, center);
+
+        ul{
+            background-color: #fff;
+            margin-top: 8vh;
+            border-radius: 1rem 0 0 1rem;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+
+            li{
+                margin: 1rem .5rem;
+                flex: 1;
+                a{
+
+                    .right-item{
+                        @include flex( flex, center, center);
+                        flex-direction: column;
+                        
+                
+                        i{
+                            font-size: 2rem;
+                            color: #5fb2e3;
+                        }
+                        i.active{
+                            color: #0d48b5;
+                        }
+                        p{
+                            color: #222;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 960px){
+    .costum-container .center-content{
+        max-width: 400px;
+        padding: 1rem;
+    }
+    .costum-container .center-content .center-title span{
+        font-size: 1rem;
+    }
+    .costum-container .center-content .center-image{
+        margin: 1.5rem 0;
+    }
+    .costum-container .left-content{
+        flex-direction: row;
+        align-items: center;
+    }
+    .costum-container .left-content .user{
+        margin-top: 0;
+
+        p{
+            font-size: 1rem;
+        }
+    }
+    .costum-container .center-content{
+        margin-top: 1rem;
+    }
+    .costum-container .center-content .center-image .center-image-content{
+        width: 9rem;
+        height: 9rem;
+    }
+    .costum-container .center-content .center-footer{
+        margin-bottom: 0;
+    }
+    .costum-container .right-content ul{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 720px){
+    .costum-container .right-content ul li a .right-item i{
+        font-size: 1.6rem;
+    }
+    .costum-container .center-content .center-footer .footer-right i{
+        font-size: 1rem;
+    }
+    .costum-container .left-content .location p{
+        font-size: 1rem;
+    }
+
+}
+@media screen and (max-width: 540px){
+    .costum-container .center-content{
+        max-width: 66vw;
+    }
+    .costum-container .center-content .center-image .center-image-content{
+        width: 7rem;
+        height: 7rem;
+    }
+    .costum-container .center-content .center-options p {
+        width: 90%;
+        margin-top: 0.5rem;
+        font-size: .9rem;
+    }
+    .costum-container .right-content ul li a .right-item i{
+        font-size: 1rem;
+    }
+    .costum-container .right-content ul li a .right-item p{
+        font-size: .9rem;
+    }
+    .costum-container .left-content .user i{
+        font-size: 1.1rem;
+    }
+    .costum-container .left-content .user .user-name,
+    .costum-container .left-content .user .user-level{
+        align-items: center;
+    }
+    .costum-container .left-content .location i{
+        font-size: 1.7rem;
+    }
+    .costum-container .left-content .location p{
+        font-size: .9rem;
+    }
+
+
+}

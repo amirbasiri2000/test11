@@ -207,7 +207,13 @@ i{
             min-height: 80vh;
             display: flex;
             flex-direction: column;
-
+            li.active i{
+                color: #0d48b5 !important;
+            }
+            li.active p{
+                color: #222 !important;
+                font-weight: 500;
+            }
             li{
                 margin: 1rem .5rem;
                 flex: 1;
@@ -222,11 +228,8 @@ i{
                             font-size: 2rem;
                             color: #5fb2e3;
                         }
-                        i.active{
-                            color: #0d48b5;
-                        }
                         p{
-                            color: #222;
+                            color: #555;
                             
                         }
                     }

@@ -312,6 +312,15 @@ i {
           flex-direction: column;
 }
 
+.costum-container .right-content ul li.active i {
+  color: #0d48b5 !important;
+}
+
+.costum-container .right-content ul li.active p {
+  color: #222 !important;
+  font-weight: 500;
+}
+
 .costum-container .right-content ul li {
   margin: 1rem .5rem;
   -webkit-box-flex: 1;
@@ -340,12 +349,8 @@ i {
   color: #5fb2e3;
 }
 
-.costum-container .right-content ul li a .right-item i.active {
-  color: #0d48b5;
-}
-
 .costum-container .right-content ul li a .right-item p {
-  color: #222;
+  color: #555;
 }
 
 @media only screen and (max-width: 960px) {

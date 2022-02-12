@@ -51,16 +51,16 @@ i{
         .user{
             @include flex( flex, flex-start, center);
             background: #E1EDEE;
-            border-radius: 22px;
-            padding : 12px 18px;
+            border-radius: 15px;
+            padding: 9px 14px;
 
             img{
-                width: 42px;
+                width: 26px;
             }
 
             p{
                 color: #6F6E6E;
-                font-size: 26px;
+                font-size: 15px;
                 padding: 0 10px;
             }
             .user-name{
@@ -101,7 +101,7 @@ i{
         backdrop-filter: blur(6.9px);
         -webkit-backdrop-filter: blur(6.9px);
         padding: 14px 37px 47px;
-        margin-top: 3rem;
+        margin-top: 4rem;
         border: 10px solid rgba(255, 255, 255, 0.17);
         width: 731px;
         height: 955px;
@@ -132,7 +132,7 @@ i{
         }
         .center-image{
             @include flex( flex, space-between, center);
-            margin: 2rem 0;
+            
             
             .center-image-content-left,.center-image-content-right{
                 position: relative;
@@ -140,9 +140,10 @@ i{
                 height: 282px;
                 cursor: pointer;
                 border-radius: 1rem;
-                margin-top: 50px;
+                margin-top: 54px;
+
                 img{
-                    width: 229px;
+                    width: 229.43px;
                     height: 213px;
                     border-radius: 35px;
                     margin: 6px auto 0;
@@ -270,7 +271,7 @@ i{
         ul{
             background-color: #fff;
             border-radius: 58px 0 0 58px;
-            height: 997px;
+            height: 955px;
             width: 128px;
             display: flex;
             justify-content: space-between;
@@ -311,7 +312,121 @@ i{
     }
 
 }
+@media only screen and (max-width: 1040px){
+    .costum-container{
+        .left-content{
+            height: 100%;
+            padding: 1rem;
+    
+            .user{
+                border-radius: 9px;
+                padding: 4px 7px;
+    
+                img{
+                    width: 20px;
+                }
+    
+                p{
+                    color: #6F6E6E;
+                    font-size: 13px;
+                    padding: 0 3px;
+                }
+                .user-level{
+                    
+                    img{
+                        margin-left: 6px;
+                    }
+                }
+            }
+            .location{
+                p{
+                    font-size: 15px;
+                    margin-left: 5px;
+                }
+                img{
+                    width: 25px;
+                }
+            }
+        }
+        .center-content{
+            height: 894px;
 
+            .center-title{
+                direction: rtl;
+                margin: 1rem 0;
+    
+                span{
+                    font-size: 17px;
+                }
+            }
+            .center-progress{
+    
+                .progress{
+                    height: .51rem;
+    
+                    .progress-bar {
+                        background-color: #0d99fd;
+                    }
+                }
+            }
+            .center-image{
+                .center-image-content-left,.center-image-content-right{
+                    width: 227px;
+                    height: 264px;
+    
+                    img{
+                        width: 219.43px;
+                        height: 203px;
+                    }
+                }
+            }
+            .center-options{
+                margin-top: 65px;
+                p{
+                    width: 465px;
+                    height: 75px;
+                    font-size: 26px;
+                }
+            }
+    
+            .center-footer{
+
+                .footer-middle{
+                    padding-left: 1rem;
+                    flex: 1;
+    
+                    button{
+                        border-radius: 22px;
+                        width: 144px;
+                        height: 60px;
+                        font-size: 29px;
+                    }
+                }
+                
+            }
+        }
+        .right-content{
+
+    
+            ul{
+                height: 894px;
+    
+                li{
+                    a{
+    
+                        .right-item{
+                            
+                    
+                            p{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 960px){
     .costum-container{
 
@@ -329,7 +444,7 @@ i{
         }
         .center-content{
             width: 545px;
-            height: 787px;
+            height: 790px;
     
             .center-image{
                 margin: 0;
@@ -628,20 +743,33 @@ i{
                 width: 100%;
                 margin: 0;
                 padding: 1rem;
-                border-radius: 30px 30px 0 0;
-    
+                border-radius: 20px 20px 0 0;
+                
                 li {
                     a{
                         .right-item{
                             
                             p{
                                 font-size: 13px;
+                                display: none;
                             }
                             i{
-                                font-size: 30px;
+                                font-size: 20px;
                             }
                         } 
                     } 
+                }
+                li.active{
+                    transform: translateY(-12px);
+                    a{
+                        
+                        .right-item{
+
+                            p{
+                                display: block;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -76,17 +76,17 @@ i {
       -ms-flex-align: center;
           align-items: center;
   background: #E1EDEE;
-  border-radius: 22px;
-  padding: 12px 18px;
+  border-radius: 15px;
+  padding: 9px 14px;
 }
 
 .costum-container .left-content .user img {
-  width: 42px;
+  width: 26px;
 }
 
 .costum-container .left-content .user p {
   color: #6F6E6E;
-  font-size: 26px;
+  font-size: 15px;
   padding: 0 10px;
 }
 
@@ -154,7 +154,7 @@ i {
   backdrop-filter: blur(6.9px);
   -webkit-backdrop-filter: blur(6.9px);
   padding: 14px 37px 47px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   border: 10px solid rgba(255, 255, 255, 0.17);
   width: 731px;
   height: 955px;
@@ -194,7 +194,6 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem 0;
 }
 
 .costum-container .center-content .center-image .center-image-content-left, .costum-container .center-content .center-image .center-image-content-right {
@@ -203,11 +202,11 @@ i {
   height: 282px;
   cursor: pointer;
   border-radius: 1rem;
-  margin-top: 50px;
+  margin-top: 54px;
 }
 
 .costum-container .center-content .center-image .center-image-content-left img, .costum-container .center-content .center-image .center-image-content-right img {
-  width: 229px;
+  width: 229.43px;
   height: 213px;
   border-radius: 35px;
   margin: 6px auto 0;
@@ -380,7 +379,7 @@ i {
 .costum-container .right-content ul {
   background-color: #fff;
   border-radius: 58px 0 0 58px;
-  height: 997px;
+  height: 955px;
   width: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,6 +435,82 @@ i {
   line-height: 123.2%;
 }
 
+@media only screen and (max-width: 1040px) {
+  .costum-container .left-content {
+    height: 100%;
+    padding: 1rem;
+  }
+  .costum-container .left-content .user {
+    border-radius: 9px;
+    padding: 4px 7px;
+  }
+  .costum-container .left-content .user img {
+    width: 20px;
+  }
+  .costum-container .left-content .user p {
+    color: #6F6E6E;
+    font-size: 13px;
+    padding: 0 3px;
+  }
+  .costum-container .left-content .user .user-level img {
+    margin-left: 6px;
+  }
+  .costum-container .left-content .location p {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .costum-container .left-content .location img {
+    width: 25px;
+  }
+  .costum-container .center-content {
+    height: 894px;
+  }
+  .costum-container .center-content .center-title {
+    direction: rtl;
+    margin: 1rem 0;
+  }
+  .costum-container .center-content .center-title span {
+    font-size: 17px;
+  }
+  .costum-container .center-content .center-progress .progress {
+    height: .51rem;
+  }
+  .costum-container .center-content .center-progress .progress .progress-bar {
+    background-color: #0d99fd;
+  }
+  .costum-container .center-content .center-image .center-image-content-left, .costum-container .center-content .center-image .center-image-content-right {
+    width: 227px;
+    height: 264px;
+  }
+  .costum-container .center-content .center-image .center-image-content-left img, .costum-container .center-content .center-image .center-image-content-right img {
+    width: 219.43px;
+    height: 203px;
+  }
+  .costum-container .center-content .center-options {
+    margin-top: 65px;
+  }
+  .costum-container .center-content .center-options p {
+    width: 465px;
+    height: 75px;
+    font-size: 26px;
+  }
+  .costum-container .center-content .center-footer .footer-middle {
+    padding-left: 1rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .costum-container .center-content .center-footer .footer-middle button {
+    border-radius: 22px;
+    width: 144px;
+    height: 60px;
+    font-size: 29px;
+  }
+  .costum-container .right-content ul {
+    height: 894px;
+  }
+}
+
 @media only screen and (max-width: 960px) {
   .costum-container .left-content {
     display: -webkit-box;
@@ -460,7 +535,7 @@ i {
   }
   .costum-container .center-content {
     width: 545px;
-    height: 787px;
+    height: 790px;
   }
   .costum-container .center-content .center-image {
     margin: 0;
@@ -708,13 +783,21 @@ i {
     width: 100%;
     margin: 0;
     padding: 1rem;
-    border-radius: 30px 30px 0 0;
+    border-radius: 20px 20px 0 0;
   }
   .costum-container .right-content ul li a .right-item p {
     font-size: 13px;
+    display: none;
   }
   .costum-container .right-content ul li a .right-item i {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .costum-container .right-content ul li.active {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+  .costum-container .right-content ul li.active a .right-item p {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

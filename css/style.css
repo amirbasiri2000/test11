@@ -182,15 +182,15 @@ i {
   margin: 2rem 0;
 }
 
-.costum-container .center-content .center-image .center-image-content {
+.costum-container .center-content .center-image .center-image-content-left, .costum-container .center-content .center-image .center-image-content-right {
+  position: relative;
   width: 10rem;
   height: 10rem;
   cursor: pointer;
-  background-color: #0cab0c;
   border-radius: 1rem;
 }
 
-.costum-container .center-content .center-image .center-image-content img {
+.costum-container .center-content .center-image .center-image-content-left img, .costum-container .center-content .center-image .center-image-content-right img {
   width: 95%;
   height: 80%;
   border-radius: 1rem;
@@ -198,6 +198,44 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.costum-container .center-content .center-image .center-image-content-left .sound-icon-left, .costum-container .center-content .center-image .center-image-content-left .sound-icon-right, .costum-container .center-content .center-image .center-image-content-right .sound-icon-left, .costum-container .center-content .center-image .center-image-content-right .sound-icon-right {
+  position: absolute;
+  bottom: .3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.costum-container .center-content .center-image .center-image-content-left .sound-icon-left i, .costum-container .center-content .center-image .center-image-content-left .sound-icon-right i, .costum-container .center-content .center-image .center-image-content-right .sound-icon-left i, .costum-container .center-content .center-image .center-image-content-right .sound-icon-right i {
+  font-size: 2rem;
+}
+
+.costum-container .center-content .center-image .center-image-content-left .sound-icon-left i:hover, .costum-container .center-content .center-image .center-image-content-left .sound-icon-right i:hover, .costum-container .center-content .center-image .center-image-content-right .sound-icon-left i:hover, .costum-container .center-content .center-image .center-image-content-right .sound-icon-right i:hover {
+  font-size: 2.1rem;
+}
+
+.costum-container .center-content .center-image .center-image-content-left .sound-icon-left i, .costum-container .center-content .center-image .center-image-content-right .sound-icon-left i {
+  color: #0cab0c;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: .7rem;
+}
+
+.costum-container .center-content .center-image .center-image-content-left .sound-icon-right i, .costum-container .center-content .center-image .center-image-content-right .sound-icon-right i {
+  color: #fff;
+  background-color: #258fe3;
+  border-radius: 50%;
+  padding: .7rem;
+}
+
+.costum-container .center-content .center-image .center-image-content-left {
+  background-color: #0cab0c;
+}
+
+.costum-container .center-content .center-image .center-image-content-right {
+  background-color: #fff;
 }
 
 .costum-container .center-content .center-options p {
@@ -351,6 +389,7 @@ i {
 
 .costum-container .right-content ul li a .right-item p {
   color: #555;
+  font-size: .9rem;
 }
 
 @media only screen and (max-width: 960px) {

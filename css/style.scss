@@ -1,3 +1,7 @@
+@font-face {
+    font-family : 'vazir';
+    src : url(../fonts/Vazir.ttf);
+}
 @import './variable';
 
  * {
@@ -5,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'vazir';
 }
 p{
     padding: 0;
@@ -103,7 +108,7 @@ i{
 
             span{
                 color: #222;
-                font-size: 1.1rem;
+                font-size: .9rem;
             }
         }
         .center-progress{
@@ -268,7 +273,7 @@ i{
                         }
                         p{
                             color: #555;
-                            font-size: .9rem;
+                            font-size: .7rem;
                         }
                     }
                 }
@@ -284,7 +289,7 @@ i{
         padding: 1rem;
     }
     .costum-container .center-content .center-title span{
-        font-size: 1rem;
+        font-size: .9rem;
     }
     .costum-container .center-content .center-image{
         margin: 1.5rem 0;
@@ -314,7 +319,7 @@ i{
         margin-top: 0;
     }
 }
-@media screen and (max-width: 720px){
+@media only screen and (max-width: 720px){
     .costum-container .right-content ul li a .right-item i{
         font-size: 1.6rem;
     }
@@ -326,7 +331,7 @@ i{
     }
 
 }
-@media screen and (max-width: 540px){
+@media only screen and (max-width: 540px){
     .costum-container .center-content{
         max-width: 85vw;
         margin-top: 2rem;
@@ -337,9 +342,15 @@ i{
     .costum-container .left-content .user i {
         margin: 0 0.2rem;
     }
-    .costum-container .center-content .center-image .center-image-content{
+    .costum-container .center-content .center-image .center-image-content-left, .costum-container .center-content .center-image .center-image-content-right{
         width: 7rem;
         height: 7rem;
+    }
+    .sound-icon-left i, .sound-icon-right i{
+        font-size: 1.5rem !important;
+    }
+    .costum-container .left-content .user p{
+        font-size: .7rem;
     }
     .costum-container .center-content .center-options p {
         width: 90%;
@@ -353,7 +364,7 @@ i{
         font-size: .9rem;
     }
     .costum-container .left-content .user i{
-        font-size: 1.1rem;
+        font-size: .9rem;
     }
     .costum-container .left-content .user .user-name,
     .costum-container .left-content .user .user-level{
@@ -363,7 +374,7 @@ i{
         font-size: 1.7rem;
     }
     .costum-container .left-content .location p{
-        font-size: .9rem;
+        font-size: .7rem;
     }
     .costum-container .right-content ul {
         
@@ -376,6 +387,10 @@ i{
         bottom: 0;
         z-index: 1000;
         border-radius: 1rem 1rem 0 0;
+
+        p{
+            display: none;
+        }
     }
 
 }

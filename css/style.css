@@ -625,18 +625,21 @@ i {
   .costum-container .left-content .user {
     padding: 7px 13px;
   }
+  .costum-container .left-content .user p {
+    padding: 0 3px;
+  }
   .costum-container .left-content img {
     width: 25px !important;
   }
   .costum-container .left-content p {
-    font-size: 9px !important;
+    font-size: 11px !important;
   }
   .costum-container .center-content {
     width: 338px;
     height: 566px;
     padding: 0px 19px 0px;
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
   .costum-container .center-content .center-title span {
     font-size: 12px;

@@ -529,12 +529,16 @@ i{
             
             .user{
                 padding: 7px 13px;
+
+                p{
+                    padding : 0 3px;
+                }
             }
             img{
                 width: 25px !important;
             }
             p{
-                font-size: 9px !important;
+                font-size: 11px !important;
             }
             
         }
@@ -543,12 +547,12 @@ i{
             height: 566px;
             padding: 0px 19px 0px;
             margin-top: 1rem;
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
             
             .center-title{
 
                 span{
-                    font-size: 12px;
+                    font-size: 12px ;
                 }
             }
             .center-image{

@@ -6,8 +6,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'vazir';
 }
@@ -81,11 +79,11 @@ i {
 
 .costum-container .left-content .user p {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: .5rem;
 }
 
 .costum-container .left-content .user i {
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   margin: 0 .5rem;
 }
 
@@ -135,12 +133,12 @@ i {
 
 .costum-container .left-content .location p {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: .7rem;
   margin-left: .5rem;
 }
 
 .costum-container .left-content .location i {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #fff;
 }
 
@@ -190,8 +188,8 @@ i {
 
 .costum-container .center-content .center-image .center-image-content-left, .costum-container .center-content .center-image .center-image-content-right {
   position: relative;
-  width: 10rem;
-  height: 10rem;
+  width: 9rem;
+  height: 9rem;
   cursor: pointer;
   border-radius: 1rem;
 }
@@ -422,7 +420,16 @@ i {
     margin-top: 0;
   }
   .costum-container .left-content .user p {
-    font-size: 1rem;
+    font-size: .7rem;
+  }
+  .costum-container .left-content .user i {
+    font-size: 1.1rem;
+  }
+  .costum-container .left-content .location i {
+    font-size: 1.5rem;
+  }
+  .costum-container .left-content .location p {
+    font-size: .74rem;
   }
   .costum-container .center-content {
     margin-top: 1rem;
@@ -447,7 +454,10 @@ i {
     font-size: 1rem;
   }
   .costum-container .left-content .location p {
-    font-size: 1rem;
+    font-size: .74rem;
+  }
+  .costum-container .right-content ul li a .right-item p {
+    font-size: .5rem;
   }
 }
 
